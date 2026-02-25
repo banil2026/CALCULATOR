@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CALCULATER</title>
+</head>
+<body>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-image: url("https://image.slidesdocs.com/responsive-images/background/simple-white-education-pencil-calculator-art-powerpoint-background_644fe4b2ed__960_540.jpg");
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #header{
+            box-shadow: 0px 2px 10px;
+            width: 100vw;
+            height: 10vh;
+            vertical-align: middle;
+        }
+        .header_div{
+            padding: 1vw;
+        }
+        #calculater_box{
+            position: fixed;
+            /* border: 1px solid black; */
+            border-radius: 15px;
+            text-align: center;
+            top: 20vh;
+            width: 20vw;
+            height: 57vh;
+            line-height: 4vw;
+            /* background: transparent; */
+            backdrop-filter: blur(20px);
+            box-shadow: 0px 0px 20px;
+            padding: 1vw;
+        }
+        #inp1{
+            width: 93%;
+            height: 20%;
+            background-color: white;
+            font-size: xx-large;
+            border: 2px solid rgb(8, 120, 120);
+            border-radius: 10px;
+        }
+        #inp1:hover{
+            box-shadow: 0px 0px 20px;
+        }
+        .row{
+            width: 4vw;
+            height: 7vh;
+            /* opacity: 50%; */
+            background-color: white;
+            border-radius: 20px;
+            border-color: rgb(8, 120, 120);
+        }
+        .row:hover{
+            box-shadow: 0px 0px 20px;
+        }
+    </style>
+    <header id="header">
+        <div class="header_div">
+            <strong style="font-size: xx-large;">CALCULATER</strong>
+        </div>
+    </header><br><br>
+    <div id="calculater_box">
+    <input type="text" name="" id="inp1"><br>
+    <button onclick="display('1')" class="row">1</button>
+    <button onclick="display('2')" class="row">2</button>
+    <button onclick="display('3')" class="row">3</button>
+    <button onclick="display('+')" class="row">+</button><br>
+    <button onclick="display('4')" class="row">4</button>
+    <button onclick="display('5')" class="row">5</button>
+    <button onclick="display('6')" class="row">6</button>
+    <button onclick="display('-')" class="row">-</button><br>
+    <button onclick="display('7')" class="row">7</button>
+    <button onclick="display('8')" class="row">8</button>
+    <button onclick="display('9')" class="row">9</button>
+    <button onclick="display('*')" class="row">*</button><br>
+    <button onclick="empty()" class="row">AC</button>
+    <button onclick="display('0')" class="row">0</button>
+    <button onclick="display('.')" class="row">.</button>
+    <button onclick="display('/')" class="row">/</button><br>
+    <button onclick="calculater()" class="row">=</button>
+    <button onclick="del()" class="row">del</button><br>
+    </div>
+    <script src="calculater.js"></script>
+</body>
+</html>
